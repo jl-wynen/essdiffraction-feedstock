@@ -1,7 +1,7 @@
 context:
   name: essdiffraction
   version: "25.8.0"
-  python_min: "3.10"
+  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
@@ -23,13 +23,13 @@ requirements:
     - setuptools-scm >=8.0
     - pip
   run:
-    - python >=${{ python_min }}
-    - dask-core
-    - essreduce >=25.05.3
+    - python >=${{ python_min }} 
+    - dask-core >=2022.1.0
+    - essreduce >=25.07.0
     - python-graphviz
-    - numpy
-    - plopp >=25.03.0
-    - pythreejs
+    - numpy >=1.25
+    - plopp >=25.07.0
+    - pythreejs >=2.4.1
     - sciline >=25.04.1
     - scipp >=25.05.1
     - scippneutron >=25.02.0
